@@ -11,4 +11,4 @@ How to use
 docker run -p 1990:1990 qwazer/atlassian-sdk-confluence
 ```
 
-Confluence is accessible at http://localhost:1990/confluence with `admin:admin` credentials.
+When Confluence starts it will be accessible at http://localhost:1990/confluence with `admin:admin` credentials.
