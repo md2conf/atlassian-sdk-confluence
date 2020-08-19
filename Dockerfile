@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends apt-transport-h
  && atlas-run-standalone --product confluence --server localhost
 
 FROM atlassian/confluence-server:latest as confluence-server
-CMD  ["atlas-run-standalone", "--product", "confluence"]
 
 ENV CONFLUENCE_HOME=/var/atlassian/application-data/sdk-data-home
 
