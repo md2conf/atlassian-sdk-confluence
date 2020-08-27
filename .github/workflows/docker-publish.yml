@@ -10,6 +10,11 @@ on:
     tags:
       - v*
 
+    schedule:
+      # * is a special character in YAML so string is quoted
+      #  every Monday at 4:15 - '15 4 * * 1'
+      - cron:  '15 4 * * 1'
+
   # Run tests for any PRs.
   pull_request:
 
