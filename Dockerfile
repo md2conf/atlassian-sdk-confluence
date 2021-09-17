@@ -9,8 +9,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends apt-transport-h
 ## dry-run to start confluence and get sdk-data-home
  && atlas-run-standalone --product confluence --server localhost --http-port 8090
 
-FROM atlassian/confluence-server:latest as confluence-server
+FROM atlassian/confluence:latest as confluence-server
 
 ENV CONFLUENCE_HOME=/var/atlassian/application-data/sdk-data-home
 
-COPY --from=atlassian-plugin-sdk-data /amps-standalone-confluence-LATEST/target/confluence/home $CONFLUENCE_HOME
+COPY --chown=confluence:confluence --from=atlassian-plugin-sdk-data /amps-standalone-confluence-LATEST/target/confluence/home $CONFLUENCE_HOME
