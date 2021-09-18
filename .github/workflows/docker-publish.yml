@@ -45,7 +45,6 @@ jobs:
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{version}}
-            type=sha
       -
         name: Login to DockerHub
         if: github.event_name != 'pull_request'
