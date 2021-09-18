@@ -14,4 +14,4 @@ docker run -p 8090:8090 -p 8091:8091 qwazer/atlassian-sdk-confluence
 ```
 
 After Confluence start it will be accessible at
-http://localhost:8090/confluence with `admin:admin` credentials.
+http://localhost:8090 with `admin:admin` credentials.
