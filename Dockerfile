@@ -1,4 +1,4 @@
-ARG CONFLUENCE_VERSION=8.0.3
+ARG CONFLUENCE_VERSION=7.20.3
 FROM openjdk:11-jdk as atlassian-plugin-sdk-data
 # To use the default value of an ARG declared before the first FROM use an ARG instruction without a value inside of a build stage:
 ARG CONFLUENCE_VERSION
